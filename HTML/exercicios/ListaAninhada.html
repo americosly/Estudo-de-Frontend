@@ -1,0 +1,80 @@
+<style type="text/css">
+.oculto{
+    display: none;
+}
+
+input{
+    background-color: black;
+    color:white;
+    height: 2%;
+}
+
+li{
+    color: gray;
+}
+</style>
+
+
+<h1>Projeto</h1>
+<input type="button" id="bot" value="+" onClick="mostrar('ma')"/>
+<div id="ma" class="oculto">
+    <ul class="tree">
+        <li>
+            <input type="button" id="bot" value="+" onClick="mostrar('mb')" href=""/>
+            Backend
+            <div id="mb" class="oculto">
+            <ul>
+                    <li>
+                        <input type="button" id="bot" value="+" onClick="mostrar('md')"/>
+                        App
+                        <div id="md" class="oculto">
+                            <ul>
+                                <li>produto.js</li>
+                                <li>usuario.js</li>
+                                <li>venda.js</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="button" id="bot" value="+" onClick="mostrar('mf')"/>
+                        Config
+                        <div id="mf" class="oculto">
+                            <ul>
+                                <li>banco.js</li>
+                                <li>rotas.js</li>
+                                <li>servidor.js</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+                
+            </li>
+            <li>
+                <input type="button" id="bot" value="+" onClick="mostrar('mc')"/>
+            Frontend
+            <div id="mc" class="oculto">
+
+                <ul>
+                    <li>
+                        <input type="button" id="bot" value="+" onClick="mostrar('mg')"/>
+                        Public
+                        <div id="mg" class="oculto">
+                            <ul>
+                                <li>app.css</li>
+                                <li>app.js</li>
+                                <li>index.html</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+                
+        </li>
+    </ul>
+</div>
+    
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+
+
+

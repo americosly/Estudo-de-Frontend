@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Exercícios</h1>
+    </header>
+    <nav>
+        <ul>
+        <a href nav-link="exercicios/teste.html">00 - Título</a> |
+        <a href nav-link="exercicios/h2o.html">01 - Parágrafo </a> |
+        <a href nav-link="exercicios/texto.html">02 - Texto </a> |
+        <a href nav-link="exercicios/listas.html">03 - Listas </a> |
+        <a href nav-link="exercicios/listaAninhada.html">04 - Lista Aninhada </a> |
+        <a href nav-link="exercicios/links.html">05 - Links </a> |
+        <a href nav-link="exercicios/tabela.html">06 - Tabela </a> |
+        <a href nav-link="exercicios/form/form.html">07 - Formulário </a> |
+        <a href nav-link="exercicios/imagens.html">08 - Imagens </a> |
+        <a href nav-link="exercicios/video.html">09 - Vídeo </a> |
+        </ul>
+    </nav>
+    <section id="conteudo"></section>
+
+   
+
+    <footer> 
+        <div>
+            <H6>Portal de exercícios</H6>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('[nav-link]').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+            
+            link.onclick = function (e) {
+                e.preventDefault()
+                fetch(link.getAttribute('nav-link'))
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+
+        
+    function mostrar(id){
+        if (document.getElementById(id).style.display == 'block'){
+        document.getElementById(id).style.display = "none";
+    }else {
+        document.getElementById(id).style.display = "block";
+        
+    }
+}
+     </script>
+</body>
+</html>
