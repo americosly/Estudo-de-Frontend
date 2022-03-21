@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <title>Tamanho Box</title>
     <style>
+        * {
+            margin: 0;
+            /* O comando box-sizing: border-box; também pode ser aplicado
+            universalmente na página, assim todos os elemnteos irão se comportar
+            da mesma forma. */
+        }
+
         body {
             font-size: 45px;
+        }
+
+        div {
+            background-color: deepskyblue;
+            width: 100%;
+            padding: 100px;
+            height: 300px;
+            border: solid 20px;
+            box-sizing: border-box; /* o comando border-box faz o navegador considerar
+             o tamanho total do elemento contado com a borda e padding. Isso evida que 
+             o elemento ultrapasse o tamanho total que você deseja que ele tenha. */
         }
     </style>
 </head>
