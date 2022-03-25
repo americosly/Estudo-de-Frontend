@@ -1,0 +1,9 @@
+Body{
+    background:url("https://javascriptbook.com/code/c01/images/constructive-backdrop.jpg") no-repeat center center fixed;
+    font-family: "Courier New", Courier, monospace;
+    background-size: cover;
+}
+
+p {
+    width: 350px;
+}
